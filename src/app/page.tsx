@@ -1,7 +1,12 @@
+'use client'
+
+import SearchBar from "../Components/SearchBar";
+import ButtonDropDown from "../Components/ButtonDropDown";
+
 export default function Home() {
   return (
-    <div className="">
-      <h1 className="text-6xl">halo</h1>
+    <div className="w-full h-full flex flex-row gap-4">
+        <h1>Home</h1>
     </div>
   );
 }
