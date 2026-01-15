@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "noteName": "Morning Plan",
+    "noteContent": "Started the day by organizing my tasks.",
+    "noteDate": "2025-10-01"
+  },
+  {
+    "id": 2,
+    "noteName": "Evening Reflection",
+    "noteContent": "Felt productive after finishing small goals.",
+    "noteDate": "2025-10-01"
+  },
+  {
+    "id": 3,
+    "noteName": "Quick Note",
+    "noteContent": "Drank coffee and worked on my laptop.",
+    "noteDate": "2025-10-02"
+  },
+  {
+    "id": 4,
+    "noteName": "Daily Thought",
+    "noteContent": "Learned something new about web development.",
+    "noteDate": "2025-10-02"
+  },
+  {
+    "id": 5,
+    "noteName": "Workout Log",
+    "noteContent": "Did a short workout in the evening.",
+    "noteDate": "2025-10-03"
+  },
+  {
+    "id": 6,
+    "noteName": "Lunch Time",
+    "noteContent": "Tried a new food near my place.",
+    "noteDate": "2025-10-03"
+  },
+  {
+    "id": 7,
+    "noteName": "Daily Task",
+    "noteContent": "Focused on finishing pending tasks.",
+    "noteDate": "2025-10-04"
+  },
+  {
+    "id": 8,
+    "noteName": "Small Win",
+    "noteContent": "Fixed a small bug in my project.",
+    "noteDate": "2025-10-04"
+  },
+  {
+    "id": 9,
+    "noteName": "Morning Note",
+    "noteContent": "Woke up early and felt refreshed.",
+    "noteDate": "2025-10-05"
+  },
+  {
+    "id": 10,
+    "noteName": "Coding Session",
+    "noteContent": "Spent time practicing JavaScript.",
+    "noteDate": "2025-10-05"
+  },
+  {
+    "id": 11,
+    "noteName": "Evening Walk",
+    "noteContent": "Went for a short walk to clear my mind.",
+    "noteDate": "2025-10-06"
+  },
+  {
+    "id": 12,
+    "noteName": "Daily Reminder",
+    "noteContent": "Remembered to stay hydrated today.",
+    "noteDate": "2025-10-07"
+  },
+  {
+    "id": 13,
+    "noteName": "Focus Time",
+    "noteContent": "Had a deep focus session in the afternoon.",
+    "noteDate": "2025-10-07"
+  },
+  {
+    "id": 14,
+    "noteName": "Simple Note",
+    "noteContent": "Reviewed notes from yesterday.",
+    "noteDate": "2025-10-08"
+  },
+  {
+    "id": 15,
+    "noteName": "Mood Check",
+    "noteContent": "Felt calm and motivated today.",
+    "noteDate": "2025-10-09"
+  },
+  {
+    "id": 16,
+    "noteName": "Learning Log",
+    "noteContent": "Watched a short tutorial video.",
+    "noteDate": "2025-10-10"
+  },
+  {
+    "id": 17,
+    "noteName": "Weekend Plan",
+    "noteContent": "Planned to rest and read a book.",
+    "noteDate": "2025-10-11"
+  },
+  {
+    "id": 18,
+    "noteName": "Daily Note",
+    "noteContent": "Cleaned my workspace a bit.",
+    "noteDate": "2025-10-12"
+  },
+  {
+    "id": 19,
+    "noteName": "Quick Thought",
+    "noteContent": "Time management felt better today.",
+    "noteDate": "2025-10-13"
+  },
+  {
+    "id": 20,
+    "noteName": "Evening Log",
+    "noteContent": "Relaxed by listening to music.",
+    "noteDate": "2025-10-14"
+  },
+
+  {
+    "id": 21,
+    "noteName": "Morning Note",
+    "noteContent": "Started the day with a clear mind.",
+    "noteDate": "2025-11-01"
+  },
+  {
+    "id": 22,
+    "noteName": "Daily Progress",
+    "noteContent": "Made steady progress on my tasks.",
+    "noteDate": "2025-11-01"
+  },
+  {
+    "id": 23,
+    "noteName": "Simple Log",
+    "noteContent": "Focused on learning something small.",
+    "noteDate": "2025-11-02"
+  },
+  {
+    "id": 24,
+    "noteName": "Reflection",
+    "noteContent": "Noted areas to improve tomorrow.",
+    "noteDate": "2025-11-03"
+  },
+  {
+    "id": 25,
+    "noteName": "Daily Habit",
+    "noteContent": "Kept my daily routine consistent.",
+    "noteDate": "2025-11-04"
+  },
+  {
+    "id": 26,
+    "noteName": "Short Note",
+    "noteContent": "Felt a bit tired but productive.",
+    "noteDate": "2025-11-04"
+  },
+  {
+    "id": 27,
+    "noteName": "Learning Time",
+    "noteContent": "Reviewed backend basics today.",
+    "noteDate": "2025-11-05"
+  },
+  {
+    "id": 28,
+    "noteName": "Evening Thought",
+    "noteContent": "Happy with small improvements.",
+    "noteDate": "2025-11-06"
+  },
+  {
+    "id": 29,
+    "noteName": "Daily Note",
+    "noteContent": "Took breaks to avoid burnout.",
+    "noteDate": "2025-11-06"
+  },
+  {
+    "id": 30,
+    "noteName": "Final Note",
+    "noteContent": "Wrapped up tasks and planned next steps.",
+    "noteDate": "2025-11-26"
+  }
+]
