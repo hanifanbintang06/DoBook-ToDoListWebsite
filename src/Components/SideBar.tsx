@@ -9,7 +9,7 @@ export default function SideBar() {
     const pathName = usePathname();
 
     return(
-        <div className="w-fit h-screen flex flex-col gap-4">
+        <div className="w-fit h-full flex flex-col gap-4">
             <div className="w-68 h-full px-4 pt-4 pb-5 flex flex-col gap-6 bg-white rounded-2xl">
                 <div className="w-auto h-fit px-4 py-3 flex flex-row gap-5">
                     <button className="cursor-pointer">

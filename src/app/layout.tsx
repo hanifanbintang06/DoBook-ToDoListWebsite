@@ -28,10 +28,10 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased
-        bg-[#F4F5FC] p-4 flex flex-row gap-4`}
+        w-full h-screen bg-[#F4F5FC] flex flex-row gap-4 p-4`}
       >
         <SideBar />
-        <div className="w-full h-fit flex flex-col gap-4">
+        <div className="w-full h-full flex flex-col gap-4">
           <Navbar />
           {children}
         </div>

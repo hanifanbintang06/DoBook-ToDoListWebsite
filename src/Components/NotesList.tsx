@@ -1,12 +1,6 @@
 import { useEffect, useState } from "react";
 import ButtonList from "./ButtonList";
-
-type Note = {
-    id: number,
-    noteName: string,
-    noteContent: string,
-    noteDate: string
-}
+import { Note } from "@/Type/Note";
 
 function groupByDate(data: Note[]) {
     return data.reduce<Record<string, Note[]>>((item, note) => {
@@ -21,32 +15,16 @@ function groupByDate(data: Note[]) {
     }, {})
 }
 
-export default function NotesList() {
-    const [ notes, setNotes ] = useState<Note[]>([])
-    const [ loading, setLoading ] = useState(true)
-    const [ error, setError ] = useState<String | null>(null)
+type NotesListProps = {
+    notes: Note[],
+    loading: boolean,
+    error: string | null,
+    onSelect: (id: number) => void,
+    activeId: number | null
+}
+
+export default function NotesList({ notes, loading, error, onSelect, activeId }: NotesListProps) {
     const groupedNotes = groupByDate(notes)
-    
-    useEffect(() => {
-        const fetchNotes = async () => {
-            try {
-                const res = await fetch('/notes.json') 
-
-                if (!res.ok) {
-                    throw new Error("Gagal Masuk")
-                }
-
-                const data: Note[] = await res.json()
-                setNotes(data)
-            } catch (err) {
-                setError("gagal di fetchnotes")
-            } finally {
-                setLoading(false)
-            }
-        }
-
-        fetchNotes()
-    }, [])
 
     if (loading) return <p className="text-sm px-4">Loading...</p>
     if (error) return <p className="text-sm px-4">{error}</p>
@@ -58,7 +36,13 @@ export default function NotesList() {
                     <h2 className="text-sm text-[#767676] px-4">{date}</h2>
                     <div className="w-full h-fit flex flex-col">
                         {item.map((item) => (
-                            <ButtonList key={item.id}>{item.noteName}</ButtonList>
+                            <div key={item.id} onClick={() => onSelect(item.id)} className={`w-auto 
+                            h-fit text-sm px-4 py-3 flex flex-row rounded-2xl items-center
+                            ${activeId === item.id ? `bg-[#3F51B5] text-white` : `bg-white text-black`}
+                            hover:text-black hover:bg-[#F4F5FC] 
+                            transition-all duration-300 cursor-pointer`}>
+                                {item.noteName}
+                            </div>
                         ))}
                     </div>
                 </div>
