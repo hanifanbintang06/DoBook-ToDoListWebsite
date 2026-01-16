@@ -33,14 +33,13 @@ export default function Notes() {
     fetchNotes()
   }, [])
 
-  const activeNote = notes.find(note => note.id === activeId) || null
+  const activeNote = notes.find(note => note.id === activeId)
   return (
     <div className="w-full h-full flex flex-row gap-4 overflow-y-auto">
       <div className="w-full h-full p-4 rounded-2xl bg-white flex flex-col gap-3">
         <div className="w-full h-fit flex flex-row items-center gap-4">
             <input type="text" value={activeNote?.noteName}
             className="w-full text-lg font-medium mr-auto focus:outline-none" />
-            <p className="text-sm">12/12/25</p>
             <ButtonDropDown />
         </div>
         <textarea value={activeNote?.noteContent} 

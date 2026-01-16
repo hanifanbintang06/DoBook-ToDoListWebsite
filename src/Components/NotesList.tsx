@@ -24,14 +24,18 @@ type NotesListProps = {
 }
 
 export default function NotesList({ notes, loading, error, onSelect, activeId }: NotesListProps) {
-    const groupedNotes = groupByDate(notes)
+    const groupedNotes = Object.entries(groupByDate(notes))
+
+    const sortedEntries = groupedNotes.sort(
+        ([dateA], [dateB]) => new Date(dateB).getTime() - new Date(dateA).getTime()
+    )
 
     if (loading) return <p className="text-sm px-4">Loading...</p>
     if (error) return <p className="text-sm px-4">{error}</p>
 
     return(
         <div className="w-full h-full flex flex-col gap-5 overflow-y-auto">
-            {Object.entries(groupedNotes).map(([date, item]) => (
+            {sortedEntries.map(([date, item]) => (
                 <div key={date} className="w-full h-fit flex flex-col gap-3">
                     <h2 className="text-sm text-[#767676] px-4">{date}</h2>
                     <div className="w-full h-fit flex flex-col">
